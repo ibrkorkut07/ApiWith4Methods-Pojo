@@ -10,10 +10,8 @@ import org.junit.Test;
 import pojos.JsonTodos123Pojo;
 import testData.JsonplaceholderTestData;
 import utilities.JsonUtil;
-
 import java.util.HashMap;
 import java.util.Map;
-
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.core.IsEqual.equalTo;
 import static org.junit.Assert.assertEquals;
@@ -37,7 +35,6 @@ public class M05_GetRequest05 extends JsonplaceholderBaseUrl {
     public void test00 () {
         spec03.pathParams("p1", "todos", "p2", "123");
         Response response = given().spec(spec03).when().get("{p1}/{p2}");
-
     }
 
     // Matchers without Testdata class
