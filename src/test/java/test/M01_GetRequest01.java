@@ -6,7 +6,6 @@ import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import org.junit.Assert;
 import org.junit.Test;
-
 import static io.restassured.RestAssured.given;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
@@ -33,5 +32,4 @@ public class M01_GetRequest01 extends RestfulBaseUrl {
         Assert.assertEquals("application/json; charset=utf-8", response.contentType());
         Assert.assertEquals("HTTP/1.1 200 OK", response.statusLine());
     }
-
 }
