@@ -5,9 +5,7 @@ import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import org.junit.Test;
 import pojos.JsonTodos123Pojo;
-
 import java.util.*;
-
 import static io.restassured.RestAssured.given;
 
 public class M06_GetRequest06 extends DummyBaseUrl {
