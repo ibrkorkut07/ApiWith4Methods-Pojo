@@ -11,14 +11,11 @@ import pojos.BookingdatesPojo;
 import pojos.RestfulBooking7Pojo;
 import testData.RestfulTestData;
 import utilities.JsonUtil;
-
 import java.util.HashMap;
 import java.util.Map;
-
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.core.IsEqual.equalTo;
 import static org.junit.Assert.assertEquals;
-
 
 public class M03_GetRequest03 extends RestfulBaseUrl {
 
@@ -46,8 +43,6 @@ public class M03_GetRequest03 extends RestfulBaseUrl {
     public void test01 () {
         spec01.pathParams("p1", "booking", "p2", "7");
         Response response = given().contentType(ContentType.JSON).spec(spec01).when().get("{p1}/{p2}");
-
-
     }
 
     // Matchers
@@ -152,7 +147,6 @@ public class M03_GetRequest03 extends RestfulBaseUrl {
         Assert.assertEquals(expData.getBookingdates(), actdata.getBookingdates());
         // Assert.assertEquals(expData.getAdditionalneeds(), actdata.getAdditionalneeds());
 
-
         /*
         status kodunun 200 ve
         content type'inin "application/json"
@@ -166,8 +160,6 @@ public class M03_GetRequest03 extends RestfulBaseUrl {
                     "checkout": "2018-12-01"
             "additionalneeds": "Breakfast"
         */
-
-
     }
 
     // ObjectMapper
@@ -204,8 +196,5 @@ public class M03_GetRequest03 extends RestfulBaseUrl {
         assertEquals(expData.get("bookingdates.checkin"), actData.get("bookingdates.checkin"));
         assertEquals(expData.get("bookingdates.checkout"), actData.get("bookingdates.checkout"));
         assertEquals(expData.get("additionalneeds"), actData.get("additionalneeds"));
-
-
     }
-
 }
