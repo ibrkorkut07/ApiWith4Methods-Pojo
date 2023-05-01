@@ -5,7 +5,6 @@ import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import org.junit.Assert;
 import org.junit.Test;
-
 import static io.restassured.RestAssured.given;
 
 public class M02_GetRequest02 extends RestfulBaseUrl {
@@ -27,5 +26,4 @@ public class M02_GetRequest02 extends RestfulBaseUrl {
         // Assert.assertEquals("application/json", response.contentType());  // does not accept "application/json"
         Assert.assertEquals("application/json; charset=utf-8", response.contentType());  // accepts only full type text
     }
-
 }
