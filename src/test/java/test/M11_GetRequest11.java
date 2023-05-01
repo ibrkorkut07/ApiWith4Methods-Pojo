@@ -30,9 +30,6 @@ public class M11_GetRequest11 extends DummyBaseUrl {
     public void test00 () {
         spec02.pathParams("p1", "api", "p2", "v1", "p3", "employees");
         Response response = given().contentType("application/json").spec(spec02).when().get("{p1}/{p2}/{p3}");
-
-
-
     }
 
     // Matchers
