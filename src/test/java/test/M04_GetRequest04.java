@@ -34,7 +34,6 @@ public class M04_GetRequest04 extends DummyBaseUrl {
         Response response = given().spec(spec02).when().get("{p1}/{p2}/{p3}");
     }
 
-
     // Matchers without Testdata class
     @Test
     public void test01(){
@@ -183,8 +182,6 @@ public class M04_GetRequest04 extends DummyBaseUrl {
         employee'lerden birinin "Rhona Davidson"
         gelen yaslar icinde 21, 61, ve 23 degerlerinden birinin oldugunu test edin
     */
-
-
     }
 
     // ObjectMapper
@@ -199,10 +196,5 @@ public class M04_GetRequest04 extends DummyBaseUrl {
         //4) ASSERTION
 
         Response response = given().spec(spec02).when().get("{p1}/{p2}/{p3}");
-
-
-
-
     }
-
 }
