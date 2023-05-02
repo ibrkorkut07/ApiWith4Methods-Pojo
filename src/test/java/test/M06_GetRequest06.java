@@ -28,7 +28,6 @@ public class M06_GetRequest06 extends DummyBaseUrl {
     @Test
     public void test01(){
     // Matchers Class is to match exp and act data. It is not related to printing.
-
     }
 
     // Jsonpath
@@ -84,7 +83,6 @@ public class M06_GetRequest06 extends DummyBaseUrl {
         Response response = given().spec(spec02).when().get("{p1}/{p2}/{p3}");
 
         //4) ASSERTION
-
     }
 
     // ObjectMapper
@@ -100,7 +98,5 @@ public class M06_GetRequest06 extends DummyBaseUrl {
         Response response = given().spec(spec02).when().get("{p1}/{p2}/{p3}");
 
         //4) ASSERTION
-
     }
-
 }
