@@ -115,7 +115,6 @@ public class M05_GetRequest05 extends JsonplaceholderBaseUrl {
         assertEquals(expData.get("title"), actDataMap.get("title"));
         assertEquals(expData.get("completed"), actDataMap.get("completed"));
 
-
         /*  todos123ExpData.put("Server", "cloudflare");
           todos123ExpData.put("userId", 7);
           todos123ExpData.put("id", 123);
@@ -188,5 +187,4 @@ public class M05_GetRequest05 extends JsonplaceholderBaseUrl {
         assertEquals(expData.get("title"), actData.get("title"));
         assertEquals(expData.get("completed"), actData.get("completed"));
     }
-
 }
