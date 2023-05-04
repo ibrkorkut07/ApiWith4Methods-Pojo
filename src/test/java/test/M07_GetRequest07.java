@@ -141,5 +141,4 @@ public class M07_GetRequest07 extends DummyBaseUrl {
         //4) ASSERTION
 
     }
-
 }
