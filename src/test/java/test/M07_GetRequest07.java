@@ -6,9 +6,7 @@ import io.restassured.response.Response;
 import org.hamcrest.Matchers;
 import org.junit.Assert;
 import org.junit.Test;
-
 import java.util.*;
-
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.CoreMatchers.hasItem;
 import static org.hamcrest.Matchers.hasSize;
@@ -30,12 +28,7 @@ public class M07_GetRequest07 extends DummyBaseUrl {
     public void test00 () {
         spec02.pathParams("p1", "api", "p2", "v1", "p3", "employees");
         Response response = given().spec(spec02).when().get("{p1}/{p2}/{p3}");
-
-
-
-
     }
-
 
     // Matchers without Testdata class
     @Test
