@@ -156,7 +156,6 @@ public class M05_GetRequest05 extends JsonplaceholderBaseUrl {
         assertEquals(expTodos123Data.getId(), actdata.getId());
         assertEquals(expTodos123Data.getTitle(), actdata.getTitle());
         assertEquals(expTodos123Data.isCompleted(), actdata.isCompleted());
-
     }
 
     // ObjectMapper
