@@ -123,7 +123,6 @@ public class M07_GetRequest07 extends DummyBaseUrl {
         Response response = given().spec(spec02).when().get("{p1}/{p2}/{p3}");
 
         //4) ASSERTION
-
     }
 
     // ObjectMapper
