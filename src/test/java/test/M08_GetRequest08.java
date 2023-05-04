@@ -51,9 +51,7 @@ public class M08_GetRequest08 extends JsonplaceholderBaseUrl {
         assertEquals(expData.get("userId"), actData.get("userId"));
 
         assertEquals("cloudflare", actData.get("Server"));
-
     }
-
 
     // Matchers without Testdata class
     @Test
@@ -124,7 +122,6 @@ public class M08_GetRequest08 extends JsonplaceholderBaseUrl {
         Assert.assertEquals(expDataMap.get("userId"), actData.get("userId"));
         Assert.assertEquals(expDataMap.get("Via"), response.headers().getValue("Via"));
         Assert.assertEquals(expDataMap.get("Server"), response.headers().getValue("Server"));
-
 
         /* HashMap<String, Object> todos2ExpData = new HashMap<>();
         todos2ExpData.put("statusCode", 200);
@@ -216,5 +213,4 @@ public class M08_GetRequest08 extends JsonplaceholderBaseUrl {
             "Via" değerinin “1.1 vegur” ve
             "Server" değerinin “cloudflare” olduğunu test edin…   */
     }
-
 }
