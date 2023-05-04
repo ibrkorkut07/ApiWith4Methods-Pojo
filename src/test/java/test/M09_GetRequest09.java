@@ -9,9 +9,7 @@ import pojos.BookingdatesPojo;
 import pojos.RestfulBooking7Pojo;
 import testData.RestfulTestData;
 import utilities.JsonUtil;
-
 import java.util.HashMap;
-
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.junit.Assert.assertEquals;
@@ -35,10 +33,7 @@ public class M09_GetRequest09 extends RestfulBaseUrl {
     public void test00 () {
         spec01.pathParams("p1", "booking", "p2", "1");
         Response response = given().spec(spec01).when().get("{p1}/{p2}");
-
-
     }
-
 
     // Matchers without Testdata class
     @Test
@@ -143,7 +138,6 @@ public class M09_GetRequest09 extends RestfulBaseUrl {
         assertEquals(expData.getBookingdates().getCheckin(), actData.getBookingdates().getCheckin());
         assertEquals(expData.getBookingdates().getCheckout(), actData.getBookingdates().getCheckout());
 
-
         /*  "firstname": "Mary",
             "lastname": "Brown",
             "totalprice": 904,
@@ -201,5 +195,4 @@ public class M09_GetRequest09 extends RestfulBaseUrl {
                     "checkout": "2022-11-11"
                     }   */
     }
-
 }
