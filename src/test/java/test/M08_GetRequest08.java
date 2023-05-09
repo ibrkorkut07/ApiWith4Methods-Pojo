@@ -9,10 +9,8 @@ import org.junit.Test;
 import pojos.JsonTodos2Pojo;
 import testData.JsonplaceholderTestData;
 import utilities.JsonUtil;
-
 import java.util.HashMap;
 import java.util.List;
-
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.junit.Assert.assertEquals;
