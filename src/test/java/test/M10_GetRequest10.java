@@ -1,15 +1,12 @@
 package test;
 
-
 import baseUrl.DummyBaseUrl;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import org.junit.Test;
 import testData.DummyTestData;
 import testData.RestfulTestData;
-
 import java.util.*;
-
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.Matchers.hasItems;
