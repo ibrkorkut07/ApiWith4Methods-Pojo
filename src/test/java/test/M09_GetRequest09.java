@@ -160,7 +160,6 @@ public class M09_GetRequest09 extends RestfulBaseUrl {
                 "        \"checkout\": \"2022-11-11\"\n" +
                 "}";
 
-
         HashMap<String, Object> expData = JsonUtil.convertJsonToJava(jsonData, HashMap.class);
 
         //3) REQUEST & RESPONSE
