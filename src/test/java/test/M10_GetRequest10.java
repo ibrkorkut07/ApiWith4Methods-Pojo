@@ -37,7 +37,6 @@ public class M10_GetRequest10 extends DummyBaseUrl {
         Response response = given().spec(spec02).when().get("{p1}/{p2}/{p3}");
     }
 
-
     // Matchers without Testdata class
     @Test
     public void test01(){
