@@ -110,7 +110,6 @@ public class M10_GetRequest10 extends DummyBaseUrl {
         }
         System.out.println("ageList = " + ageList);
 
-
         JsonPath json = response.jsonPath();
 
         assertEquals(expData.get("statusCode"), response.statusCode());
