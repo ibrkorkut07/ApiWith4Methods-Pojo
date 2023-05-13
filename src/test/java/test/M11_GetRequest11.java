@@ -7,12 +7,10 @@ import io.restassured.response.Response;
 import org.junit.Assert;
 import org.junit.Test;
 import testData.DummyTestData;
-
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
-
 import static io.restassured.RestAssured.given;
 import static org.junit.Assert.assertEquals;
 
@@ -146,5 +144,4 @@ public class M11_GetRequest11 extends DummyBaseUrl {
     İkinci en yüksek maaşın 675000  olduğunu test edin.
     */
     }
-
 }
