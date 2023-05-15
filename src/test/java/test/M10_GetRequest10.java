@@ -198,5 +198,4 @@ public class M10_GetRequest10 extends DummyBaseUrl {
     //2) EXPECTED DATA
     //3) REQUEST & RESPONSE
     //4) ASSERTION
-
 }
