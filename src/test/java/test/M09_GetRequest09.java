@@ -137,7 +137,6 @@ public class M09_GetRequest09 extends RestfulBaseUrl {
         assertEquals(expData.isDepositpaid(), actData.isDepositpaid());
         assertEquals(expData.getBookingdates().getCheckin(), actData.getBookingdates().getCheckin());
         assertEquals(expData.getBookingdates().getCheckout(), actData.getBookingdates().getCheckout());
-
     }
 
     // ObjectMapper
